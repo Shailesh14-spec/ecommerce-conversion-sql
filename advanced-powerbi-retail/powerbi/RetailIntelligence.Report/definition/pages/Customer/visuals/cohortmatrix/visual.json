@@ -1,0 +1,102 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "cohortmatrix",
+  "position": {
+    "x": 670,
+    "y": 150,
+    "width": 740,
+    "height": 610,
+    "z": 15,
+    "tabOrder": 15
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactCohort"
+                    }
+                  },
+                  "Property": "CohortMonth"
+                }
+              },
+              "queryRef": "FactCohort.CohortMonth",
+              "nativeQueryRef": "CohortMonth"
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactCohort"
+                    }
+                  },
+                  "Property": "AgeMonth"
+                }
+              },
+              "queryRef": "FactCohort.AgeMonth",
+              "nativeQueryRef": "AgeMonth"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metrics"
+                    }
+                  },
+                  "Property": "Cohort Retention %"
+                }
+              },
+              "queryRef": "Metrics.Cohort Retention %",
+              "nativeQueryRef": "Cohort Retention %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Complete-month cohorts: all countries, known customers'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

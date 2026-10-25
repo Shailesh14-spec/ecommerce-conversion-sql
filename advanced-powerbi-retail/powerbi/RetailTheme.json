@@ -1,0 +1,14 @@
+{
+  "name": "Retail Intelligence",
+  "dataColors": [
+    "#167D8D",
+    "#4275B5",
+    "#E6A23C",
+    "#C86464",
+    "#7C70A8",
+    "#65A990"
+  ],
+  "background": "#F4F6FA",
+  "foreground": "#17243B",
+  "tableAccent": "#167D8D"
+}

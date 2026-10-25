@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "forecasttable",
+  "position": {
+    "x": 20,
+    "y": 590,
+    "width": 1390,
+    "height": 165,
+    "z": 30,
+    "tabOrder": 30
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metrics"
+                    }
+                  },
+                  "Property": "Selected Cost Ratio"
+                }
+              },
+              "queryRef": "Metrics.Selected Cost Ratio",
+              "nativeQueryRef": "Selected Cost Ratio"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metrics"
+                    }
+                  },
+                  "Property": "Scenario Contribution Rate"
+                }
+              },
+              "queryRef": "Metrics.Scenario Contribution Rate",
+              "nativeQueryRef": "Scenario Contribution Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metrics"
+                    }
+                  },
+                  "Property": "Forecast Improvement %"
+                }
+              },
+              "queryRef": "Metrics.Forecast Improvement %",
+              "nativeQueryRef": "Forecast Improvement %"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Backtest errors and scenario assumptions'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

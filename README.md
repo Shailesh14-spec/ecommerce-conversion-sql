@@ -1,3 +1,15 @@
+# Ecommerce Analytics and Power BI
+
+## Featured: Retail Intelligence for Power BI
+
+**[Open the advanced Power BI project](advanced-powerbi-retail/README.md)** — native PBIP/PBIR source, nine tables, 37 DAX measures, four report pages, SQL reconciliation, customer cohorts and forecasting.
+
+![Retail dashboard design preview](advanced-powerbi-retail/reports/dashboard-preview.svg)
+
+The preview is rendered in Python from actual calculated outputs. Native Power BI Desktop refresh, DAX execution and rendering still require validation on Windows. See the project for reproducible setup and measured findings.
+
+---
+
 # Ecommerce Conversion Analysis with SQL
 
 **Which visitor segments warrant further investigation before changing acquisition or site strategy?**

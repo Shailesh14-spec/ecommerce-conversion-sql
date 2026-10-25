@@ -1,0 +1,13 @@
+// Run in Power BI Desktop DAX Query view after a successful import refresh.
+// Expected unfiltered values are copied from the executed Python pipeline.
+EVALUATE
+ROW(
+    "Net revenue GBP", [Net Revenue],                 // 9769872.05
+    "Gross revenue GBP", [Gross Revenue],             // 10666684.54
+    "Cancellation GBP", [Cancellation Value],         // 896812.49
+    "Positive invoices", [Positive Orders],           // 19960
+    "Known purchasing customers", [Known Customers],  // 4338
+    "Reconciliation difference", [Revenue Reconciliation], // 0
+    "Model MAE", [Forecast MAE],                     // 12286.932923816956
+    "Baseline MAE", [Baseline MAE]                   // 11119.16464285714
+)
